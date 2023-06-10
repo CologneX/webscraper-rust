@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="application-name" content="OpenMerce" />
+	<meta name="theme-color" content="dark" />
+	
+</head>
+
+<body data-sveltekit-preload-data="hover">
+	<div style="display: contents" class="h-full overflow-hidden antialiased">
+			<script>
+				{
+					__sveltekit_cnysup = {
+						base: new URL("..", location).pathname.slice(0, -1),
+						env: {}
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("../_app/immutable/entry/start.f1bbb23a.js"),
+						import("../_app/immutable/entry/app.202585b8.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element);
+					});
+				}
+			</script>
+		</div>
+</body>
+
+</html>
